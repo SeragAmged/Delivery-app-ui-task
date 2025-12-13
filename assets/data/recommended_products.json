@@ -1,0 +1,118 @@
+[
+    {
+        "id": "11",
+        "name": "Malteadas tropicales",
+        "imagePreview": "assets/images/home_food/juice.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "Naturales",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Elaborado con jugos naturales",
+        "price": 12.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Malteadas tropicales",
+        "imagePreview": "assets/images/home_food/juice2.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "Naturales",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Salsa clásica de la casa",
+        "price": 20.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Malteadas tropicales",
+        "imagePreview": "assets/images/home_food/juice.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "Naturales",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Elaborado con jugos naturales",
+        "price": 12.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Malteadas tropicales",
+        "imagePreview": "assets/images/home_food/juice2.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "Naturales",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Salsa clásica de la casa",
+        "price": 20.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    }
+]

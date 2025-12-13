@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Burger",
+        "image": "assets/images/categories/Burger.png",
+        "color": "#FFDD95"
+    },
+    {
+        "name": "Burritos",
+        "image": "assets/images/categories/Burritos.png",
+        "color": "#CCAAD9"
+
+    },
+    {
+        "name": "Frias",
+        "image": "assets/images/categories/Frias.png",
+        "color": "#86E3CE"
+    },
+    {
+        "name": "Pizza",
+        "image": "assets/images/categories/Pizza.png",
+        "color": "#FFACAC"
+    },
+    {
+        "name": "Tacos",
+        "image": "assets/images/categories/Tacos.png",
+        "color": "#D0E6A5"
+    }
+]

@@ -1,0 +1,118 @@
+[
+    {
+        "id": "1",
+        "name": "Pizza Clásica",
+        "imagePreview": "assets/images/home_food/pizza.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "pizza",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Salsa clásica de la casa",
+        "price": 12.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Hamburguesa mix",
+        "imagePreview": "assets/images/home_food/burger.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "burger",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Doble carne con queso",
+        "price": 12.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Pizza Clásica",
+        "imagePreview": "assets/images/home_food/pizza.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "pizza",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Salsa clásica de la casa",
+        "price": 12.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Hamburguesa mix",
+        "imagePreview": "assets/images/home_food/burger.png",
+        "image": "assets/images/food_details/pablo-merchan-montes-dc_JMu8lb5U-unsplash.png",
+        "type": "burger",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero ",
+        "shortDescription": "Doble carne con queso",
+        "price": 12.58,
+        "isFavorite": false,
+        "ingredients": [
+            {
+                "name": "Arrachera",
+                "image": "assets/images/food_details/Arrachera.png"
+            },
+            {
+                "name": "Pan Ajonjoli",
+                "image": "assets/images/food_details/PanAjonjoli.png"
+            },
+            {
+                "name": "Lechuga",
+                "image": "assets/images/food_details/Lechuga.png"
+            },
+            {
+                "name": "Cebolla",
+                "image": "assets/images/food_details/Cebolla.png"
+            }
+        ]
+    }
+]
