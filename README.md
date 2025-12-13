@@ -10,6 +10,11 @@
 	<img src="https://img.shields.io/badge/Dart-3.6-blue?logo=dart&logoColor=white" alt="Dart" />
 	<img src="https://img.shields.io/badge/flutter_bloc-9.x-5A29EA?logo=flutter&logoColor=white" alt="flutter_bloc" />
 	<img src="https://img.shields.io/badge/injectable-2.5-007ACC?logo=rust&logoColor=white" alt="injectable" />
+	<br />
+	<br />
+	<a href="https://github.com/SeragAmged/Delivery-app-ui-task/releases/latest/download/delivery_app.apk">
+		<img src="https://img.shields.io/badge/Download_Latest_APK-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="40" />
+	</a>
 </p>
 
 This repository contains a small delivery demo app developed for an interview
