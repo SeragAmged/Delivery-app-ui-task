@@ -128,9 +128,11 @@ on mobile it uses platform appropriate storage provided by `path_provider`.
 
 Add screenshots to the `screenshots/` folder and replace these placeholders:
 
-![Home Screen](screenshots/home_screen.png)
-![Product Details](screenshots/product_details.png)
-![Cart Screen](screenshots/cart_screen.png)
+<p align="center">
+  <img src="screenshots/home_screen.png" width="32%" alt="Home Screen" />
+  <img src="screenshots/product_details.png" width="32%" alt="Product Details" />
+  <img src="screenshots/cart_screen.png" width="32%" alt="Cart Screen" />
+</p>
 
 ## **Assumptions & Trade-offs**
 
