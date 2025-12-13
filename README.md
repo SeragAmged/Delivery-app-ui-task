@@ -2,7 +2,8 @@
 
 <p align="center">
 	<a href="https://alexforprog.com" target="_blank" rel="noopener">
-		<img src="https://alexforprog.com/wp-content/themes/alexapps/assets/img/logo.png?v=1.4.9" alt="AlexApps" width="160" />
+		<img src="assets/images/branding/app_icon.png" alt="App Icon" width="100" style="border-radius: 20px; vertical-align: middle; margin-right: 20px;" />
+		<img src="https://alexforprog.com/wp-content/themes/alexapps/assets/img/logo.png?v=1.4.9" alt="AlexApps" width="160" style="vertical-align: middle;" />
 	</a>
 	<br />
 	<img src="https://img.shields.io/badge/Flutter-3.6-blue?logo=flutter&logoColor=white" alt="Flutter" />
@@ -30,6 +31,7 @@ UI rather than production-scale infrastructure.
 - JSON-based local data source for products and categories (assets).
 - Dependency injection using `injectable` + `get_it`.
 - Code generation for JSON serializable models and DI configuration.
+- **Custom App Icon**: uniquely generated and configured for Android and iOS.
 
 ## **Tech Stack**
 
@@ -39,6 +41,7 @@ UI rather than production-scale infrastructure.
 - JSON serialization: `json_serializable` + `json_annotation`
 - UI helpers: `flutter_screenutil`, `flutter_svg`
 - Local asset data (JSON) for sample products and categories
+
 
 ## **Architecture & Project Structure**
 
