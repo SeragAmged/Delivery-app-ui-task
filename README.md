@@ -25,7 +25,7 @@ UI rather than production-scale infrastructure.
 ## **Purpose**
 
 - **Interview task for AlexApps**: demonstrate practical Flutter skills and
-	engineering approach expected from a junior/entry-level Flutter engineer.
+  engineering approach expected from a junior/entry-level Flutter engineer.
 
 ## **Features Implemented**
 
@@ -47,16 +47,15 @@ UI rather than production-scale infrastructure.
 - UI helpers: `flutter_screenutil`, `flutter_svg`
 - Local asset data (JSON) for sample products and categories
 
-
 ## **Architecture & Project Structure**
 
 The project follows a lightweight Clean Architecture-inspired structure that
 keeps domain, data and presentation concerns separated and easy to navigate:
 
 - `lib/home/` — feature folder for the home screen
-	- `data/` — DTOs, asset data sources, repository implementation
-	- `domain/` — domain models and interfaces
-	- `presentation/` — Cubit/Bloc and UI widgets/screens
+  - `data/` — DTOs, asset data sources, repository implementation
+  - `domain/` — domain models and interfaces
+  - `presentation/` — Cubit/Bloc and UI widgets/screens
 - `lib/cart/` — cart feature with presentation and state management
 - `lib/product_details/` — product details UI and state
 - `lib/core/` — shared widgets, theme, and utilities
@@ -69,20 +68,22 @@ domain and UI layers to make the codebase easy to scan and extend.
 ## **State Management Approach**
 
 - Primary: `flutter_bloc` (Cubit/Bloc patterns) for predictable state
-	transitions and testability.
+  transitions and testability.
 - Persistence: `hydrated_bloc` for simple, file-backed state persistence of the
-	cart between app launches.
+  cart between app launches.
 
 Why this choice:
+
 - `flutter_bloc` is explicit, easy to reason about (good for interviews), and
-	well-suited to small-to-medium apps where side effects and state transitions
-	should be explicit and testable.
+  well-suited to small-to-medium apps where side effects and state transitions
+  should be explicit and testable.
 - `hydrated_bloc` provides simple persistence without introducing a database
-	layer, which fits an interview project scope.
+  layer, which fits an interview project scope.
 
 ## **How to run the project locally**
 
 Prerequisites:
+
 - Install Flutter (see https://docs.flutter.dev/get-started/install)
 - Ensure a device or emulator is available.
 
@@ -90,41 +91,41 @@ Steps:
 
 1. Clone the repository and open it:
 
-	 ```bash
-	 git clone <repo-url>
-	 cd delivery_app
-	 ```
+   ```bash
+   git clone <repo-url>
+   cd delivery_app
+   ```
 
 2. Install dependencies:
 
-	 ```bash
-	 flutter pub get
-	 ```
+   ```bash
+   flutter pub get
+   ```
 
 3. Generate code (models and DI):
 
-	 ```bash
-	 flutter pub run build_runner build --delete-conflicting-outputs
-	 ```
+   ```bash
+   flutter pub run build_runner build --delete-conflicting-outputs
+   ```
 
-	 - For continuous generation during development you can use `watch` instead
-		 of `build`:
+   - For continuous generation during development you can use `watch` instead
+     of `build`:
 
-	 ```bash
-	 flutter pub run build_runner watch --delete-conflicting-outputs
-	 ```
+   ```bash
+   flutter pub run build_runner watch --delete-conflicting-outputs
+   ```
 
 4. Run the app on a connected device or emulator:
 
-	 ```bash
-	 flutter run -d <device-id>
-	 ```
+   ```bash
+   flutter run -d <device-id>
+   ```
 
 5. (Optional) Run tests:
 
-	 ```bash
-	 flutter test
-	 ```
+   ```bash
+   flutter test
+   ```
 
 Note: the project uses `hydrated_bloc`. On desktop the storage is file-backed;
 on mobile it uses platform appropriate storage provided by `path_provider`.
@@ -138,45 +139,51 @@ Add screenshots to the `screenshots/` folder and replace these placeholders:
   <img src="screenshots/product_details.png" width="32%" alt="Product Details" />
   <img src="screenshots/cart_screen.png" width="32%" alt="Cart Screen" />
 </p>
+<p align="center">
+  <img src="screenshots/favorite_products.png" width="33%" alt="Home Screen" />
+  <img src="screenshots/search_prodcuts.png" width="33%" alt="Product Details" />
 
+</p>
 ## **Assumptions & Trade-offs**
 
 - Data is loaded from local JSON assets (no network layer) to keep the project
-	focused and deterministic for the interview.
+  focused and deterministic for the interview.
 - Authentication and user accounts were out of scope.
 - Error handling is pragmatic and focused on UX; exhaustive edge-case handling
-	and analytics were not included due to time constraints.
+  and analytics were not included due to time constraints.
 - The app targets a demonstrative UI/UX; production concerns such as CI/CD,
-	localization, and complex offline syncing are omitted.
+  localization, and complex offline syncing are omitted.
 
 ## **Possible Improvements (with more time)**
 
 - Add network-backed data fetching with repository/network layers and
-	retry/caching policies.
+  retry/caching policies.
 - Add full unit and widget test coverage for critical flows.
 - Implement localization and theming variants.
 - Improve accessibility (semantics, screen reader labels, contrast checks).
 - Replace `hydrated_bloc` persistence with a well-defined repository backed by
-	SQLite or secure storage for user data.
+  SQLite or secure storage for user data.
 - Add CI pipeline for static analysis (`flutter analyze`) and tests.
 
 ## **Notes to Reviewers**
 
 - Focus areas:
-	- Clean architecture: check separation between `data`, `domain`, and
-		`presentation` layers.
-	- State management: review `Cubit`/`Bloc` patterns and `hydrated_bloc`
-		usage in the `cart` feature.
-	- DI: review `lib/di/di_config.dart` and generated files for sensible
-		registrations.
-	- Readability: look for clear naming, small functions, and short widgets.
-	- Code generation: verify `json_serializable` model code and generated
-		DTO mappings.
+
+  - Clean architecture: check separation between `data`, `domain`, and
+    `presentation` layers.
+  - State management: review `Cubit`/`Bloc` patterns and `hydrated_bloc`
+    usage in the `cart` feature.
+  - DI: review `lib/di/di_config.dart` and generated files for sensible
+    registrations.
+  - Readability: look for clear naming, small functions, and short widgets.
+  - Code generation: verify `json_serializable` model code and generated
+    DTO mappings.
 
 - What I did not spend time on (explicitly): advanced performance
-	optimizations, exhaustive integration tests, and backend integration.
+  optimizations, exhaustive integration tests, and backend integration.
 
 If you'd like, I can:
+
 - Add a short video walkthrough or GIFs for the main flows.
 - Add a focused test suite for the cart logic.
 
