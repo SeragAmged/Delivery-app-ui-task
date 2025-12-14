@@ -61,57 +61,56 @@ class ProductDetailsScreen extends StatelessWidget {
               ),
             ),
           ),
+          _addToCart(),
+        ],
+      ),
+    );
+  }
 
-          /// -------------------------------
-          ///   BOTTOM CONTAINER
-          /// -------------------------------
-          Container(
-            height: 125.h,
-            decoration: const BoxDecoration(
-              color: AppColors.background,
-              border: Border(
-                top: BorderSide(
-                  color: Color(0xFF707070),
-                  width: .2,
-                ),
-              ),
-            ),
-            padding: EdgeInsetsDirectional.symmetric(
-              vertical: 30.h,
-              horizontal: 24.w,
-            ),
-            child: Row(
-              children: [
-                BlocBuilder<CartCubit, CartState>(
-                  builder: (context, state) {
-                    final isInCart = state.products.contains(product);
-                    return AppGradientButton(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 50.w,
-                        vertical: 18.h,
-                      ),
-                      onTap: isInCart
-                          ? null
-                          : () {
-                              context.read<CartCubit>().addProduct(product);
-                            },
-                      child: Text(
-                        isInCart ? 'en el carrito' : 'Ordenar ahora',
-                        style: AppTextStyles.medium18
-                            .copyWith(color: Colors.white),
-                      ),
-                    );
-                  },
-                ),
-                Spacer(),
-                Text(
-                  '\$${product.price}',
-                  style: AppTextStyles.semiBold30
-                      .copyWith(color: AppColors.darkblue73),
-                )
-              ],
-            ),
+  Container _addToCart() {
+    return Container(
+      height: 125.h,
+      decoration: const BoxDecoration(
+        color: AppColors.background,
+        border: Border(
+          top: BorderSide(
+            color: Color(0xFF707070),
+            width: .2,
           ),
+        ),
+      ),
+      padding: EdgeInsetsDirectional.symmetric(
+        vertical: 30.h,
+        horizontal: 24.w,
+      ),
+      child: Row(
+        children: [
+          BlocBuilder<CartCubit, CartState>(
+            builder: (context, state) {
+              final isInCart = state.products.contains(product);
+              return AppGradientButton(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 50.w,
+                  vertical: 18.h,
+                ),
+                onTap: isInCart
+                    ? null
+                    : () {
+                        context.read<CartCubit>().addProduct(product);
+                      },
+                child: Text(
+                  isInCart ? 'en el carrito' : 'Ordenar ahora',
+                  style: AppTextStyles.medium18.copyWith(color: Colors.white),
+                ),
+              );
+            },
+          ),
+          Spacer(),
+          Text(
+            '\$${product.price}',
+            style:
+                AppTextStyles.semiBold30.copyWith(color: AppColors.darkblue73),
+          )
         ],
       ),
     );
