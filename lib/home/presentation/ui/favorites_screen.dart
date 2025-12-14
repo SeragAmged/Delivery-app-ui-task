@@ -33,6 +33,7 @@ class FavoritesScreen extends StatelessWidget {
                 child: ListView.separated(
                   itemCount: state.favoriteProducts.length,
                   separatorBuilder: (context, index) => SizedBox(height: 16.h),
+                  padding: EdgeInsets.symmetric(horizontal: 16.w),
                   itemBuilder: (context, index) => Container(
                     decoration: BoxDecoration(boxShadow: [
                       BoxShadow(
