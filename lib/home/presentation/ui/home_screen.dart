@@ -33,6 +33,11 @@ class HomeScreen extends StatelessWidget {
             body: Column(
               children: [
                 appBar(context),
+                if (state.errorMessage?.isNotEmpty ?? false) _errorState(state),
+                if (state.isLoadingCategories ||
+                    state.isLoadingPopularProducts ||
+                    state.isLoadingRecommendedProducts)
+                  _loadingSate(),
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
@@ -135,6 +140,16 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+
+  Center _loadingSate() {
+    return const Center(
+      child: CircularProgressIndicator(
+        color: AppColors.primary,
+      ),
+    );
+  }
+
+  Text _errorState(HomeState state) => Text(state.errorMessage.toString());
 
   Widget homeCategoryTitle(BuildContext context,
       {required String title, void Function()? onReadMore}) {
