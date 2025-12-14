@@ -9,17 +9,15 @@ import 'package:delivery_app/core/domain/product.dart';
 import 'package:delivery_app/assets/data.dart';
 import 'package:injectable/injectable.dart';
 
-@Singleton(as: HomeProductsDataSource,env: [Environment.dev]) 
+@Singleton(as: HomeProductsDataSource, env: [Environment.dev])
 @Named('assets')
 class AssetProductsDataSource implements HomeProductsDataSource {
-  AssetProductsDataSource({AssetLoader? assetLoader})
-      : assetLoader = assetLoader ?? AssetLoader();
+  AssetProductsDataSource({required this.assetLoader});
   final AssetLoader assetLoader;
   @override
   Future<List<Product>> getPopularProducts() async {
     final productsDtos = await assetLoader.loadList(
         Assets.dataPopularProducts, ProductDto.fromJson);
-    // final repeated = _repeatList(productsDtos, 3);
     return productsDtos.map((productDto) => productDto.toProduct()).toList();
   }
 
@@ -36,13 +34,10 @@ class AssetProductsDataSource implements HomeProductsDataSource {
   @override
   Future<List<Product>> getRecommendedProducts() async {
     final productsDtos = await assetLoader.loadList(
-        Assets.dataRecommendedProducts, ProductDto.fromJson);
-    final repeated = _repeatList(productsDtos, 3);
-    return repeated.map((productDto) => productDto.toProduct()).toList();
+      Assets.dataRecommendedProducts,
+      ProductDto.fromJson,
+    );
+    return productsDtos.map((productDto) => productDto.toProduct()).toList();
   }
 
-  List<T> _repeatList<T>(List<T> list, int times) {
-    return List<T>.generate(
-        list.length * times, (index) => list[index % list.length]);
-  }
 }

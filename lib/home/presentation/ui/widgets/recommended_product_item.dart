@@ -13,11 +13,13 @@ class RecommendedProductItem extends StatelessWidget {
     required this.product,
     required this.onTap,
     required this.onFavTap,
+    this.width,
   });
 
   final Product product;
   final VoidCallback onTap;
   final VoidCallback onFavTap;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +55,7 @@ class RecommendedProductItem extends StatelessWidget {
 
   Widget card() {
     return Container(
+      width: width,
       height: 120.h,
       padding: EdgeInsetsDirectional.only(
         start: 100.w,

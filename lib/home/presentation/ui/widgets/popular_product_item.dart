@@ -13,18 +13,20 @@ class PopularProductItem extends StatelessWidget {
     required this.product,
     required this.onTap,
     required this.onFavTap,
+    this.width,
   });
 
   final Product product;
   final void Function() onTap;
   final void Function() onFavTap;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 180.w,
+        width: width ?? 180.w,
         constraints: BoxConstraints(
           minHeight: 200.h,
           maxHeight: 260.h,

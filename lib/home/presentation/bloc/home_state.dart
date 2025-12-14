@@ -33,6 +33,11 @@ class HomeState extends Equatable {
         favoriteProductIds
       ];
 
+  List<Product> get favoriteProducts => [
+        ...recommendedProducts.where((p) => favoriteProductIds.contains(p.id)),
+        ...popularProducts.where((p) => favoriteProductIds.contains(p.id)),
+      ];
+
   HomeState copyWith({
     bool? isLoadingCategories,
     bool? isLoadingRecommendedProducts,

@@ -1,4 +1,5 @@
 import 'package:delivery_app/cart/presintation/cart_screen.dart';
+import 'package:delivery_app/home/presentation/ui/favorites_screen.dart';
 import 'package:delivery_app/home/presentation/ui/home_screen.dart';
 import 'package:delivery_app/layout/bottom_nav_cubit.dart';
 import 'package:delivery_app/layout/widgets/custom_bottom_bar.dart';
@@ -12,7 +13,7 @@ class ScreenLayout extends StatelessWidget {
     HomeScreen(),
     marketScreen(),
     CartScreen(),
-    favScreen(),
+    FavoritesScreen(),
     profileScreen(),
   ];
 
@@ -34,10 +35,7 @@ class ScreenLayout extends StatelessWidget {
     );
   }
 
-
   static Widget marketScreen() => const Center(child: Text("Search Screen"));
 
   static Widget profileScreen() => const Center(child: Text("Profile Screen"));
-
-  static Widget favScreen() => Center(child: Text("Fav Screen"));
 }
