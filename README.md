@@ -31,6 +31,7 @@ UI rather than production-scale infrastructure.
 
 - Product listing (home screen) with categories and popular/recommended lists.
 - Product details screen with add-to-cart flow.
+- Product search functionality with filter.
 - Simple cart with quantity management and persisted state (via `hydrated_bloc`).
 - Clean, responsive UI using `flutter_screenutil` for adaptive sizing.
 - JSON-based local data source for products and categories (assets).
@@ -40,7 +41,7 @@ UI rather than production-scale infrastructure.
 
 ## **Tech Stack**
 
-- Flutter & Dart (SDK >= 3.6)
+- Flutter & Dart
 - State management: `flutter_bloc` + `hydrated_bloc`
 - Dependency injection: `injectable` + `get_it`
 - JSON serialization: `json_serializable` + `json_annotation`
@@ -127,28 +128,20 @@ Steps:
    flutter test
    ```
 
-Note: the project uses `hydrated_bloc`. On desktop the storage is file-backed;
-on mobile it uses platform appropriate storage provided by `path_provider`.
-
 ## **Screenshots**
-
-Add screenshots to the `screenshots/` folder and replace these placeholders:
-
 <p align="center">
   <img src="screenshots/home_screen.png" width="32%" alt="Home Screen" />
   <img src="screenshots/product_details.png" width="32%" alt="Product Details" />
   <img src="screenshots/cart_screen.png" width="32%" alt="Cart Screen" />
 </p>
 <p align="center">
-  <img src="screenshots/favorite_products.png" width="33%" alt="Home Screen" />
-  <img src="screenshots/search_prodcuts.png" width="33%" alt="Product Details" />
-
+  <img src="screenshots/favorite_products.png" width="33%" alt="Favorites Screen" />
+  <img src="screenshots/search_products.png" width="33%" alt="Search Screen" />
 </p>
 ## **Assumptions & Trade-offs**
 
 - Data is loaded from local JSON assets (no network layer) to keep the project
-  focused and deterministic for the interview.
-- Authentication and user accounts were out of scope.
+  focused for the interview.
 - Error handling is pragmatic and focused on UX; exhaustive edge-case handling
   and analytics were not included due to time constraints.
 - The app targets a demonstrative UI/UX; production concerns such as CI/CD,
@@ -163,7 +156,6 @@ Add screenshots to the `screenshots/` folder and replace these placeholders:
 - Improve accessibility (semantics, screen reader labels, contrast checks).
 - Replace `hydrated_bloc` persistence with a well-defined repository backed by
   SQLite or secure storage for user data.
-- Add CI pipeline for static analysis (`flutter analyze`) and tests.
 
 ## **Notes to Reviewers**
 
@@ -182,12 +174,4 @@ Add screenshots to the `screenshots/` folder and replace these placeholders:
 - What I did not spend time on (explicitly): advanced performance
   optimizations, exhaustive integration tests, and backend integration.
 
-If you'd like, I can:
 
-- Add a short video walkthrough or GIFs for the main flows.
-- Add a focused test suite for the cart logic.
-
----
-
-If you need any clarifications about design choices or specific files,
-please let me know and I will walk through them.
