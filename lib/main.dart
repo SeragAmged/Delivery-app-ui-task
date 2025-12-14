@@ -37,8 +37,6 @@ class MyApp extends StatelessWidget {
           title: 'delivery app',
           debugShowCheckedModeBanner: false,
           theme: AppTheme.light,
-          darkTheme: AppTheme.light,
-          themeMode: ThemeMode.system,
           navigatorKey: AppRouter.navigatorKey,
           onGenerateRoute: AppRouter.onGenerateRoute,
           initialRoute: AppRoutes.root,

@@ -11,6 +11,7 @@ import 'package:delivery_app/core/presentation/themes/app_colors.dart';
 import 'package:delivery_app/core/presentation/widgets/material_svg_button.dart';
 import 'package:delivery_app/router/app_routes.dart';
 import 'package:delivery_app/router/models/product_details_param.dart';
+import 'package:delivery_app/search/presentation/ui/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -195,7 +196,11 @@ class HomeScreen extends StatelessWidget {
         searchTextFieldButton(
           context,
           () {
-            //TODO: Navigate To search Screen
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SearchScreen(),
+                ));
           },
         ),
         SizedBox(width: 8.w),
