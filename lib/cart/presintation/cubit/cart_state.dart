@@ -1,5 +1,6 @@
 import 'package:delivery_app/cart/domain/address.dart';
 import 'package:delivery_app/cart/domain/cart_product.dart';
+import 'package:delivery_app/core/domain/product.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'cart_state.g.dart';
 
@@ -22,6 +23,8 @@ class CartState {
 
     return double.parse(total.toStringAsFixed(2));
   }
+
+  List<Product> get products => cart.map((c) => c.product).toList();
 
   CartState copyWith({
     List<CartProduct>? cart,

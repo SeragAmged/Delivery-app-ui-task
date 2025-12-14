@@ -84,23 +84,26 @@ class ProductDetailsScreen extends StatelessWidget {
               children: [
                 BlocBuilder<CartCubit, CartState>(
                   builder: (context, state) {
+                    final isInCart = state.products.contains(product);
                     return AppGradientButton(
                       padding: EdgeInsets.symmetric(
                         horizontal: 50.w,
                         vertical: 18.h,
                       ),
-                      onTap: () {
-                        context.read<CartCubit>().addProduct(product);
-                      },
+                      onTap: isInCart
+                          ? null
+                          : () {
+                              context.read<CartCubit>().addProduct(product);
+                            },
                       child: Text(
-                        'Ordenar ahora',
+                        isInCart ? 'en el carrito' : 'Ordenar ahora',
                         style: AppTextStyles.medium18
                             .copyWith(color: Colors.white),
                       ),
                     );
                   },
                 ),
-                SizedBox(width: 18.w),
+                Spacer(),
                 Text(
                   '\$${product.price}',
                   style: AppTextStyles.semiBold30

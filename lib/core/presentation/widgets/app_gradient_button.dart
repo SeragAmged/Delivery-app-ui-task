@@ -20,16 +20,19 @@ class AppGradientButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       borderRadius: BorderRadius.circular(16),
-      clipBehavior: Clip.antiAlias, 
+      clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
         child: Ink(
           height: height,
           width: width,
           padding: padding,
-          decoration: const BoxDecoration(
-            gradient: AppColors.primaryGradient,
-          ),
+          decoration: onTap == null
+              ? null
+              : const BoxDecoration(
+                  gradient: AppColors.primaryGradient,
+                ),
+          color: onTap == null ? AppColors.grayBB : null,
           child: child,
         ),
       ),
