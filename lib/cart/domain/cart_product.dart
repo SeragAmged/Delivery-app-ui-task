@@ -1,4 +1,4 @@
-import 'package:delivery_app/home/domain/product.dart';
+import 'package:delivery_app/core/domain/product.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'cart_product.g.dart';
 

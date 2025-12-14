@@ -1,4 +1,4 @@
-import 'package:delivery_app/home/data/assets/dtos/ingredient_dto.dart';
+import 'package:delivery_app/core/data/assets/dtos/ingredient_dto.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'product.g.dart';

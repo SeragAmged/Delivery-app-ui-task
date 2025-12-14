@@ -1,10 +1,11 @@
-import 'package:delivery_app/home/data/assets/asset_loader.dart';
+import 'package:delivery_app/core/data/assets/asset_loader.dart';
 import 'package:delivery_app/home/data/assets/dtos/food_category_dto.dart';
-import 'package:delivery_app/home/data/assets/dtos/product_dto.dart';
-import 'package:delivery_app/home/data/mapper/dto_to_domain.dart';
+import 'package:delivery_app/core/data/assets/dtos/product_dto.dart';
+import 'package:delivery_app/home/data/mapper/food_category_dto_mapper.dart';
+import 'package:delivery_app/core/data/mapper/product_dto_mapper.dart';
 import 'package:delivery_app/home/domain/food_category.dart';
 import 'package:delivery_app/home/domain/home_products_data_source.dart';
-import 'package:delivery_app/home/domain/product.dart';
+import 'package:delivery_app/core/domain/product.dart';
 import 'package:delivery_app/assets/data.dart';
 import 'package:injectable/injectable.dart';
 

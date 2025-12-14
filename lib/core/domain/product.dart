@@ -1,4 +1,4 @@
-import 'package:delivery_app/home/domain/ingredient.dart';
+import 'package:delivery_app/core/domain/ingredient.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'product.g.dart';
 

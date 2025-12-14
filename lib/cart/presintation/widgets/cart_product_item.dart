@@ -2,7 +2,7 @@ import 'package:delivery_app/assets/icons.dart';
 import 'package:delivery_app/core/presentation/themes/app_colors.dart';
 import 'package:delivery_app/core/presentation/themes/app_text_styles.dart';
 import 'package:delivery_app/core/presentation/widgets/animated_number.dart';
-import 'package:delivery_app/home/domain/cart_product.dart';
+import 'package:delivery_app/cart/domain/cart_product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';

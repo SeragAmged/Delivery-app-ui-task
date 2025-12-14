@@ -1,4 +1,4 @@
-import 'package:delivery_app/home/domain/product.dart';
+import 'package:delivery_app/core/domain/product.dart';
 import 'package:delivery_app/assets/icons.dart';
 import 'package:delivery_app/core/presentation/themes/app_colors.dart';
 import 'package:delivery_app/core/presentation/themes/app_text_styles.dart';

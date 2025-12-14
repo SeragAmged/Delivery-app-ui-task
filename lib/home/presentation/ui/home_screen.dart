@@ -1,6 +1,6 @@
 import 'package:delivery_app/cart/presintation/cubit/cart_cubit.dart';
 import 'package:delivery_app/core/presentation/themes/app_text_styles.dart';
-import 'package:delivery_app/home/domain/product.dart';
+import 'package:delivery_app/core/domain/product.dart';
 import 'package:delivery_app/home/presentation/bloc/home_cubit.dart';
 import 'package:delivery_app/home/presentation/ui/widgets/category_item.dart';
 import 'package:delivery_app/core/presentation/widgets/my_app_bar.dart';

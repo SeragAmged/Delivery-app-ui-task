@@ -10,7 +10,7 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:delivery_app/cart/presintation/cubit/cart_cubit.dart' as _i480;
-import 'package:delivery_app/home/data/assets/asset_loader.dart' as _i207;
+import 'package:delivery_app/core/data/assets/asset_loader.dart' as _i207;
 import 'package:delivery_app/home/data/assets/asset_products_data_source.dart'
     as _i96;
 import 'package:delivery_app/home/data/home_products_repo.dart' as _i181;

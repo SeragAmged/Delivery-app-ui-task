@@ -1,9 +1,9 @@
 import 'dart:developer';
 
 import 'package:delivery_app/cart/presintation/cubit/cart_state.dart';
-import 'package:delivery_app/home/domain/address.dart';
-import 'package:delivery_app/home/domain/cart_product.dart';
-import 'package:delivery_app/home/domain/product.dart';
+import 'package:delivery_app/cart/domain/address.dart';
+import 'package:delivery_app/cart/domain/cart_product.dart';
+import 'package:delivery_app/core/domain/product.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:injectable/injectable.dart';
 

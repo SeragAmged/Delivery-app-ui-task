@@ -1,5 +1,5 @@
-import 'package:delivery_app/home/domain/address.dart';
-import 'package:delivery_app/home/domain/cart_product.dart';
+import 'package:delivery_app/cart/domain/address.dart';
+import 'package:delivery_app/cart/domain/cart_product.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'cart_state.g.dart';
 

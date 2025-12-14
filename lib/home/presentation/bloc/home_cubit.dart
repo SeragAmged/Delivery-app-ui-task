@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:delivery_app/home/data/home_products_repo.dart';
 import 'package:delivery_app/home/domain/food_category.dart';
-import 'package:delivery_app/home/domain/product.dart';
+import 'package:delivery_app/core/domain/product.dart';
 import 'package:equatable/equatable.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:injectable/injectable.dart';
