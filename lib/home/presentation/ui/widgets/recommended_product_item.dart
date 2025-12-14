@@ -12,13 +12,13 @@ class RecommendedProductItem extends StatelessWidget {
     super.key,
     required this.product,
     required this.onTap,
-    required this.onFavTap,
+     this.onFavTap,
     this.width,
   });
 
   final Product product;
   final VoidCallback onTap;
-  final VoidCallback onFavTap;
+  final VoidCallback? onFavTap;
   final double? width;
 
   @override
@@ -82,16 +82,17 @@ class RecommendedProductItem extends StatelessWidget {
                   ),
                 ),
               ),
-              MaterialSvgButton(
-                onTap: onFavTap,
-                child: SvgPicture.asset(
-                  product.isFavorite
-                      ? Assets.iconsFavoriteFiled
-                      : Assets.iconsFavorite,
-                  height: 15.h,
-                  width: 15.h,
+              if (onFavTap != null)
+                MaterialSvgButton(
+                  onTap: onFavTap,
+                  child: SvgPicture.asset(
+                    product.isFavorite
+                        ? Assets.iconsFavoriteFiled
+                        : Assets.iconsFavorite,
+                    height: 15.h,
+                    width: 15.h,
+                  ),
                 ),
-              ),
             ],
           ),
           Text(

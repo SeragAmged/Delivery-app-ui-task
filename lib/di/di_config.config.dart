@@ -39,8 +39,8 @@ extension GetItInjectableX on _i174.GetIt {
       environmentFilter,
     );
     gh.factory<_i591.BottomNavCubit>(() => _i591.BottomNavCubit());
-    gh.factory<_i480.CartCubit>(() => _i480.CartCubit());
     gh.singleton<_i914.AssetLoader>(() => _i914.AssetLoader());
+    gh.lazySingleton<_i480.CartCubit>(() => _i480.CartCubit());
     gh.lazySingleton<_i112.SearchRepository>(
         () => _i637.SearchRepositoryImpl(gh<_i914.AssetLoader>()));
     gh.factory<_i559.SearchCubit>(
@@ -53,7 +53,7 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i181.HomeProductsRepo>(() => _i181.HomeProductsRepo(
         localDataSource:
             gh<_i558.HomeProductsDataSource>(instanceName: 'assets')));
-    gh.factory<_i644.HomeCubit>(
+    gh.lazySingleton<_i644.HomeCubit>(
         () => _i644.HomeCubit(gh<_i181.HomeProductsRepo>()));
     return this;
   }

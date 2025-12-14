@@ -197,10 +197,11 @@ class HomeScreen extends StatelessWidget {
           context,
           () {
             Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const SearchScreen(),
-                ));
+              context,
+              MaterialPageRoute(
+                builder: (context) => const SearchScreen(),
+              ),
+            );
           },
         ),
         SizedBox(width: 8.w),

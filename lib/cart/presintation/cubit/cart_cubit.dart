@@ -7,7 +7,7 @@ import 'package:delivery_app/core/domain/product.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:injectable/injectable.dart';
 
-@injectable
+@LazySingleton()
 class CartCubit extends HydratedCubit<CartState> {
   CartCubit()
       : super(CartState(

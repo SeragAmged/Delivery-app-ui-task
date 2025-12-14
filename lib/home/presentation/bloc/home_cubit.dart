@@ -9,7 +9,7 @@ import 'package:injectable/injectable.dart';
 
 part 'home_state.dart';
 
-@Injectable()
+@LazySingleton()
 class HomeCubit extends HydratedCubit<HomeState> {
   final HomeProductsRepo _repo;
   HomeCubit(this._repo)
